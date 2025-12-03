@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wapi School</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Favicon -->
+     <link rel="icon" type="image/png" href="/image/public/wapi-logo.png">
+
+    <!-- Script -->
+          <script src="/index.js" type="module" defer></script>
+  </head>
+
+    <body>
+        <section class="events-single-page-section">
+            <!-- ===== HEADER / NAVIGATION ===== -->
+            <header class="site-header">
+                <responsive-nav></responsive-nav>
+            </header>
+                
+                
+                <div class="events-main-container">
+                    <p id="date"></p>
+                    <h1 id="title"></h1>
+
+                    <div class="social-icons">
+                        <icon-button>
+                            <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.1516 8.61107C4.3368 8.61107 4.16675 8.77099 4.16675 9.53699V10.9259C4.16675 11.692 4.3368 11.8518 5.1516 11.8518H7.12129V17.4074C7.12129 18.1734 7.29134 18.3333 8.10614 18.3333H10.0758C10.8907 18.3333 11.0607 18.1734 11.0607 17.4074V11.8518H13.2723C13.8903 11.8518 14.0496 11.7389 14.2193 11.1803L14.6414 9.79141C14.9322 8.83449 14.753 8.61107 13.6944 8.61107H11.0607V6.29629C11.0607 5.78491 11.5016 5.37036 12.0455 5.37036H14.8486C15.6633 5.37036 15.8334 5.21048 15.8334 4.44443V2.59258C15.8334 1.82653 15.6633 1.66666 14.8486 1.66666H12.0455C9.32592 1.66666 7.12129 3.73941 7.12129 6.29629V8.61107H5.1516Z" stroke="#676767" stroke-width="1.5" stroke-linejoin="round"/>
+                            </svg>
+                        </icon-button>
+
+                        <icon-button>
+                            <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.08325 10C2.08325 6.26806 2.08325 4.40209 3.24262 3.24271C4.40199 2.08334 6.26797 2.08334 9.99992 2.08334C13.7318 2.08334 15.5978 2.08334 16.7573 3.24271C17.9166 4.40209 17.9166 6.26806 17.9166 10C17.9166 13.7319 17.9166 15.5979 16.7573 16.7573C15.5978 17.9167 13.7318 17.9167 9.99992 17.9167C6.26797 17.9167 4.40199 17.9167 3.24262 16.7573C2.08325 15.5979 2.08325 13.7319 2.08325 10Z" stroke="#676767" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M13.75 10C13.75 12.0711 12.0711 13.75 10 13.75C7.92893 13.75 6.25 12.0711 6.25 10C6.25 7.92893 7.92893 6.25 10 6.25C12.0711 6.25 13.75 7.92893 13.75 10Z" stroke="#676767" stroke-width="1.5"/>
+                                <path d="M14.5898 5.41666H14.5823" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </icon-button>
+
+                        <icon-button>
+                            <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.82981 3.75H6.96175C4.50652 3.75 3.2789 3.75 2.51616 4.48223C1.75342 5.21447 1.75342 6.39297 1.75342 8.75V12.0833C1.75342 14.4403 1.75342 15.6188 2.51616 16.3511C3.2789 17.0833 4.50652 17.0833 6.96175 17.0833H10.4673C12.9225 17.0833 14.1501 17.0833 14.9129 16.3511C15.407 15.8767 15.581 15.2149 15.6423 14.1667" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.4723 5.83332V3.21128C13.4723 3.04856 13.6097 2.91666 13.7792 2.91666C13.8605 2.91666 13.9386 2.9477 13.9962 3.00295L17.9396 6.7887C18.1362 6.97734 18.2465 7.23321 18.2465 7.49999C18.2465 7.76677 18.1362 8.02264 17.9396 8.21128L13.9962 11.997C13.9386 12.0523 13.8605 12.0833 13.7792 12.0833C13.6097 12.0833 13.4723 11.9514 13.4723 11.7887V9.16666H10.9298C7.39583 9.16666 6.09375 12.0833 6.09375 12.0833V9.99999C6.09375 7.69881 8.03696 5.83332 10.434 5.83332H13.4723Z" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </icon-button>
+                    </div>
+
+
+                    <!-- Post Content exactly before image -->
+                    <div class="event-post-content">
+
+                        <img id="image" alt="Event Image" class="event-image">
+
+                        <div id="event-content"></div>
+                    </div>
+                </div>
+
+        </section>
+
+
+    </body>
+</html>

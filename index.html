@@ -1,424 +1,155 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home</title>
-    <!-- icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Wapi School</title>
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     
     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="image/wapi-logo.png">
+     <link rel="icon" type="image/png" href="/image/public/wapi-logo.png">
 
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Script -->
+          <script src="/index.js" type="module" defer></script>
   </head>
   <body>
-    <!-- ===== HEADER / NAVIGATION ===== -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <!-- Brand -->
-        <a class="brand" href="index.html" aria-label="West Africa People's Institute Homepage">
-          <img src="IMAGE/wapi_logo.png" alt="WAPI logo" class="logo" />
-          <div class="brand-text">
-            <h1>West African People's Institute Calabar</h1>
-            <span class="tagline"><strong>Labor.Omnia.Vincit</strong></span>
-          </div>
-        </a>
-
-        <!-- Mobile Toggle -->
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span class="hamburger"></span>
-        </button>
-
-        <!-- Navigation -->
-        <nav class="site-nav" id="primary-navigation">
-          <ul>
-            <li><a  href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="admission.html">Admission</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="news.html">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="signin.html">LogIn</a></li>
-            <!-- <li><a href="result.html">Result</a></li> -->
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- HERO CAROUSEL -->
-    <section class="hero">
-      <div class="carousel" id="heroCarousel" aria-roledescription="carousel" role="region">
-        <div class="slides">
-          <div class="slide active" data-index="0" style="background-image:url('image/background3.JPG');" aria-hidden="false">
-            <div class="slide-overlay"></div>
-            <div class="slide-content container">
-              <h2>Welcome to West Africa People's Institute</h2>
-              <p>Shaping leaders and minds across the region.</p>
-              <div class="cta-group">
-                <a href="admission.html" class="btn btn-primary">Apply Now</a>
-                <a href="gallery.html" class="btn btn-outline">View Gallery</a>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          
-          
-
-          <div class="slide" data-index="2" style="background-image:url('image/background\ 2.JPG');" aria-hidden="true">
-            <div class="slide-overlay"></div>
-            <div class="slide-content container">
-              <h2>Welcome to West Africa People's Institute</h2>
-              <p>Shaping leaders and minds across the region.</p>
-              <div class="cta-group">
-                <a href="admission.html" class="btn btn-primary">Apply Now</a>
-                <a href="gallery.html" class="btn btn-outline">View Gallery</a>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="slide" data-index="1" style="background-image:url('image/admission-hero.JPG');" aria-hidden="true">
-            <div class="slide-overlay"></div>
-            <div class="slide-content container">
-              <h2>Welcome to West Africa People's Institute</h2>
-              <p>Shaping leaders and minds across the region.</p>
-              <div class="cta-group">
-                <a href="admission.html" class="btn btn-primary">Apply Now</a>
-                <a href="gallery.html" class="btn btn-outline">View Gallery</a>
-              </div>
-            </div>
-          </div>
+      <section class="hero-container">
+        <div class="floating-bg">
+            <div class="blob blob1"></div>
+            <div class="blob blob2"></div>
         </div>
+        <div class="hero-main">
+            <!-- ===== HEADER / NAVIGATION ===== -->
+            <header class="site-header">
+                <responsive-nav></responsive-nav>
+            </header>
 
-        <!-- controls -->
-        <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
-        <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
-
-        <!-- indicators -->
-        <div class="carousel-indicators">
-          <button class="indicator active" data-slide-to="0" aria-label="Slide 1"></button>
-          <button class="indicator" data-slide-to="1" aria-label="Slide 2"></button>
-          <button class="indicator" data-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- what we offer section -->
-    <section id="offer" class="section-p1">
-      <div class="container">
-        <h2 class="section-title">What We Offer</h2>
-        <p class="section-subtitle">Empowering students through academic excellence, creativity, and character.</p>
-
-        <div class="offer-grid">
-          <div class="offer-box">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="rgba(14,169,13,1)"><path d="M12 2 0 9 12 16 22 10.1667V17.5H24V9L12 2ZM3.99902 13.4905V18.0001C5.82344 20.429 8.72812 22.0001 11.9998 22.0001 15.2714 22.0001 18.1761 20.429 20.0005 18.0001L20.0001 13.4913 12.0003 18.1579 3.99902 13.4905Z"></path></svg>
-            <h3>Quality Academics</h3>
-            <p>Comprehensive curriculum taught by experienced educators focused on excellence and innovation.</p>
-          </div>
-
-
-          <div class="offer-box">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="rgba(14,169,13,1)"><path d="M23 18.9999H22V8.99991H18V6.58569L12 0.585693L6 6.58569V8.99991H2V18.9999H1V20.9999H23V18.9999ZM6 19H4V11H6V19ZM18 11H20V19H18V11ZM11 12H13V19H11V12Z"></path></svg>
-            <h3>School Life</h3>
-            <p>Our students excel academically while actively engaging in diverse extracurricular activities.</p>
-          </div>
-
-
-          <div class="offer-box"> 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="rgba(14,169,13,1)"><path d="M13.0049 16.9409V19.0027H18.0049V21.0027H6.00488V19.0027H11.0049V16.9409C7.05857 16.4488 4.00488 13.0824 4.00488 9.00275V3.00275H20.0049V9.00275C20.0049 13.0824 16.9512 16.4488 13.0049 16.9409ZM1.00488 5.00275H3.00488V9.00275H1.00488V5.00275ZM21.0049 5.00275H23.0049V9.00275H21.0049V5.00275Z"></path></svg>
-            <h3>Leadership & Character</h3>
-            <p>Instilling values of integrity, service, and leadership through mentorship and student activities.</p>
-          </div>
-        </div>
-      </div>
-
-      <section id="stats" class="section-p1">
-      <div class="stats-container">
-        <div class="stat-box">
-          <h2>4k+</h2>
-          <p>Students Enrolled</p>
-        </div>
-
-        <div class="stat-box">
-          <h2>60+</h2>
-          <p>Dedicated Teachers</p>
-        </div>
-
-        <div class="stat-box">
-          <h2>95%+</h2>
-          <p>Graduate Success Rate</p>
-        </div>
-
-        <div class="stat-box">
-          <h2>50+</h2>
-          <p>Years of Excellence</p>
-        </div>
-      </div>
-    </section>
-
-    </section>
-
-
-    <section id="about" class="section-p1">
-  <div class="about-container">
-
-    <!-- Left: About Content -->
-    <div class="about-content">
-      <h2>About Us</h2>
-      <p>
-        <strong>West Africa People's Institute (WAPI)</strong>, Calabar, is a co-educational secondary school 
-        founded by <strong>Professor Eyo Ita</strong> — a pioneering Nigerian scholar and nationalist.  
-        His dream was to create an institution where academic excellence meets character formation and community service.
-      </p>
-
-      <p>
-        Located in the heart of Calabar, Cross River State, WAPI provides inclusive, high-quality education 
-        that blends intellectual growth with moral discipline, creativity, and leadership.
-      </p>
-
-      <p>
-        Our students are prepared for both national and international examinations — including 
-        <strong>WAEC</strong>, <strong>NECO</strong>, and <strong>JAMB</strong>. Beyond academics, we cultivate 
-        well-rounded individuals through sports, arts, debates, and community engagement.
-      </p>
-
-      <p>
-        Today, WAPI stands as a beacon of innovation, equipped with modern learning technologies to guide 
-        students into a connected global world.
-      </p>
-
-      <!-- Founder Highlight -->
-      <div class="founder-box">
-        <div class="founder-img">
-          <img src="image/professor Eyo Ita.jpg" alt="Professor Eyo Ita - Founder of WAPI">
-        </div>
-        <div class="founder-info">
-          <h3>Professor Eyo Ita</h3>
-          <p class="founder-role">Founder, West Africa People’s Institute</p>
-          <p class="founder-text">
-            A visionary educator and nationalist (1903–1972), Professor Eyo Ita believed that 
-            education was the key to African liberation and progress. His legacy continues to shape 
-            generations of leaders at WAPI.
-          </p>
-        </div>
-      </div>
-
-      <a href="about.html" class="btn-primary">Learn More</a>
-    </div>
-
-     <!-- Right: About Image -->
-    <div class="about-image">
-      <img src="image/student1.JPG" alt="Students of WAPI Calabar">
-    </div>
-
-  </div>
-</section>
-
-
-    <section id="testimonials" class="section-p1">
-      <div class="testimonial-container">
-        <h2 class="section-title">What Parents Say</h2>
-        <p class="section-subtitle">Hear from families who trust West Africa People's Institute with their children’s future.</p>
-
-        <div class="testimonial-grid">
-          <div class="testimonial-box">
-            <div class="testimonial-content">
-              <p>
-                “Enrolling my child at WAPI was a great decision 
-                the teachers are dedicated, the environment is safe and inspiring, 
-                and my child has grown remarkably in academics and confidence.”
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div>
-                <h4>Mrs. Grace Okon</h4>
-                <span>Parent of SS2 Student</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-box">
-            <div class="testimonial-content">
-              <p>
-                “WAPI combines discipline, creativity, and strong values. My son has become more responsible, 
-                confident, and academically excellent. We’re proud to be part of the WAPI family.”
-              </p>
-            </div>
-            <div class="testimonial-author">
-
-              <div>
-                <h4>Mr. Johnson Edem</h4>
-                <span>Parent of JSS3 Student</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-box">
-            <div class="testimonial-content">
-              <p>
-              “WAPI has been one of our best choices as parents — the teachers are caring and dedicated, the environment is safe and inspiring, and our child has shown remarkable growth in academics.”
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div>
-                <h4>Mrs. Anita Udo</h4>
-                <span>Parent of SS1 Student</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <section id="news" class="section-p1">
-      <div class="news-container">
-        <h2 class="section-title">News & Events</h2>
-        <p class="section-subtitle">Stay updated with the latest happenings at West Africa People's Institute, Calabar.</p>
-
-        <div class="news-grid">
-
-          <div class="news-card">
-            <div class="news-image">
-              <img src="image/event1.JPG" alt="WAPI Inter-House Sports">
-              <div class="news-date">
-                <span class="day">22</span>
-                <span class="month">SEP</span>
-              </div>
-            </div>
-            <div class="news-content">
-              <h3>WAPI Inter-House Sports 2025</h3>
-              <p>Students showcased their talents in various sporting activities promoting teamwork, discipline, and school spirit.</p>
-              <a href="news.html" class="read-more">Read More →</a>
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div class="news-image">
-              <img src="image/event2.jpg" alt="Cultural Day Celebration">
-              <div class="news-date">
-                <span class="day">10</span>
-                <span class="month">OCT</span>
-              </div>
-            </div>
-            <div class="news-content">
-              <h3>Cultural Day Celebration</h3>
-              <p>WAPI celebrated Nigeria’s diverse culture with performances, traditional wear, and food exhibitions from across the country.</p>
-              <a href="news.html" class="read-more">Read More →</a>
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div class="news-image">
-              <img src="image/event3.jpg" alt="WAPI Science Fair">
-              <div class="news-date">
-                <span class="day">28</span>
-                <span class="month">SEP</span>
-              </div>
-            </div>
-            <div class="news-content">
-              <h3>WAPI Science & Innovation Fair</h3>
-              <p>Young scientists presented innovative projects, encouraging creativity and curiosity in STEM fields.</p>
-              <a href="news.html" class="read-more">Read More →</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-        <section id="exams" class="section-p1">
-          <h2 class="section-title">Our Partners</h2>
-
-          <div class="marquee">
-            <div class="marquee-track">
-              <img src="image/waec.png" alt="WAEC Logo" >
-              <img src="image/neco.jpg" alt="NECO Logo">
-              <img src="image/jamb.png" alt="JAMB Logo">
-              <!-- Duplicate for continuous loop -->
-              <img src="image/waec.png" alt="WAEC Logo">
-              <img src="image/neco.jpg" alt="NECO Logo">
-              <img src="image/jamb.png" alt="JAMB Logo">
-              <img src="image/waec.png" alt="WAEC Logo">
-              <img src="image/neco.jpg" alt="NECO Logo">
-              <img src="image/jamb.png" alt="JAMB Logo">
-              <img src="image/waec.png" alt="WAEC Logo">
-              <img src="image/neco.jpg" alt="NECO Logo">
-              <img src="image/jamb.png" alt="JAMB Logo">
-              <img src="image/waec.png" alt="WAEC Logo">
-              <img src="image/neco.jpg" alt="NECO Logo">
-              <img src="image/jamb.png" alt="JAMB Logo">
-            </div>
-          </div>
-        </section>
-
-
-
-
-      <footer id="footer">
-        <div class="footer-container">
-
-          <!-- About Section -->
-          <div class="footer-col">
-            <h3>West Africa People's Institute</h3>
-            <p>
-              West Africa People's Institute (WAPI), Calabar is dedicated to nurturing young minds through
-              quality education, discipline, and values that inspire lifelong learning and leadership.
-            </p>
-          </div>
-
-          <!-- Quick Links -->
-          <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="admission.html">Admissions</a></li>
-              <li><a href="news.html">News & Events</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="signin.html">Sign In</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact Info -->
-          <div class="footer-col">
-            <h4>Contact Us</h4>
-            <p>📍 WAPI Road, Calabar, Cross River State, Nigeria</p>
-            <p>📞 +234 810 123 4567</p>
-            <p>✉️ info@wapicalabar.edu.ng</p>
-          </div>
-
-          <!-- Social Media -->
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/16WjbG8gji/?mibextid=wwXIfr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(255,255,255,1)"><path d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"></path></svg></i></a>
-                        <a href="https://www.instagram.com/wapi_calabar?igsh=MXIxM3N6bXVicXQ3MA==
-"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(255,255,255,1)"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"></path></svg></a>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(255,255,255,1)"><path d="M16 8.24537V15.5C16 19.0899 13.0899 22 9.5 22C5.91015 22 3 19.0899 3 15.5C3 11.9101 5.91015 9 9.5 9C10.0163 9 10.5185 9.06019 11 9.17393V12.3368C10.5454 12.1208 10.0368 12 9.5 12C7.567 12 6 13.567 6 15.5C6 17.433 7.567 19 9.5 19C11.433 19 13 17.433 13 15.5V2H16C16 4.76142 18.2386 7 21 7V10C19.1081 10 17.3696 9.34328 16 8.24537Z"></path></svg></a>
+            <div class="hero-body animate-on-scroll">
+                <div class="hero-info">
+                    <h1 class="hero-heading" id="hero-heading"></h1>
+                    <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="hero-buttons">
+                        <custom-button label="Apply Now" variant="hero-primary" href="/pages/admission.html" target="_blank"></custom-button>
+                        <custom-button label="Learn more" variant="hero-secondary" href="/pages/about.html" target="_blank"></custom-button>
                     </div>
                 </div>
-
+            </div>
         </div>
+        <icon-button id="back-to-top">
+          <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 4.58331V15.8333Z" fill="currentColor"/>
+            <path d="M10 4.58331V15.8333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 9.16669C15 9.16669 11.3176 4.1667 10 4.16669C8.68233 4.16668 5 9.16669 5 9.16669" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </icon-button>
+      </section>
 
-        <div class="footer-bottom">
-          <p>&copy; <span id="year"></span> West Africa People's Institute, Calabar. All Rights Reserved.</p>
+
+      <section>
+        <div class="kpi-container">
+            <kpi-counter-card title="Students Enrolled" value="4" suffix="k+" animated></kpi-counter-card>
+            <kpi-counter-card title="Dedicated Teachers" value="60" suffix="+" animated></kpi-counter-card>
+            <kpi-counter-card title="Graduate Success Rate" value="99" suffix="%" animated></kpi-counter-card>
         </div>
-        </footer>
+      </section>
+    
+    <section class="about-section">
+      <div class="about-container animate-on-scroll">
+        <div class="about-description">
+          <div class="wapi-age"> <img src="/image/public/wapi-age.svg" alt="image of WAPI age at 87"></div>
+          <div class="about-text">
+            <h2>About West Africa People's Institute</h2>
+            <p>West Africa People's Institute (WAPI), Calabar, is a co-educational secondary school founded by Professor Eyo Ita - a pioneering Nigerian scholar and nationalist. His dream was to create an institution where academic excellence meets character formation and community service.</p>
+            <custom-button label="Learn More" variant="secondary" href="/pages/about.html"></custom-button>
+          </div>
+        </div>
+        <div class="gallery-preview">
+          <gallery-preview
+            img1="image/student1.JPG"
+            img2="image/student2.JPG"
+            img3="image/student3.JPG"
+            img4="image/student3.JPG"> 
+          </gallery-preview>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners-section">
+      <div class="partners-container">
+          <h2> Our Parners </h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <div class="partners-logo">
+            <img src="/image/public/waec-logo.png">
+            <img src="/image/public/neco-logo.png">
+            <img src="/image/public/jamb-logo.png">
+          </div>
+      </div>
+    </section>
+
+    <section class="more-section-home">
+      <div class="what-we-offer animate-on-scroll">
+        <h2> What we offer </h2>
+        <p> Empowering students through academic excellence, creativity, and character. </p>
+        <div class="what-we-offer-cards"> 
+          <icon-card title="Student Life" 
+                     description="A balanced school experience where learners explore interests through clubs, sports, and creative activities."
+                     >
+                      <svg slot="icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.007 3.4583L13.4722 12.6527L3.32639 14.1319C1.50695 14.3958 0.777784 16.6389 2.09723 17.9236L9.43751 25.0764L7.7014 35.1805C7.3889 37.0069 9.31251 38.375 10.9236 37.5208L20 32.75L29.0764 37.5208C30.6875 38.368 32.6111 37.0069 32.2986 35.1805L30.5625 25.0764L37.9028 17.9236C39.2222 16.6389 38.4931 14.3958 36.6736 14.1319L26.5278 12.6527L21.9931 3.4583C21.1806 1.81942 18.8264 1.79858 18.007 3.4583Z" fill="#015300"/>
+                      </svg>
+          </icon-card>
+
+          <icon-card title="Holistic Development" 
+                     description="We nurture well-rounded students through leadership programs, competitions, and character-building activities."
+                     >
+                      <svg slot="icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M37.5 28.125V1.875C37.5 0.835938 36.6641 0 35.625 0H10C5.85938 0 2.5 3.35938 2.5 7.5V32.5C2.5 36.6406 5.85938 40 10 40H35.625C36.6641 40 37.5 39.1641 37.5 38.125V36.875C37.5 36.2891 37.2266 35.7578 36.8047 35.4141C36.4766 34.2109 36.4766 30.7812 36.8047 29.5781C37.2266 29.2422 37.5 28.7109 37.5 28.125ZM12.5 10.4688C12.5 10.2109 12.7109 10 12.9688 10H29.5312C29.7891 10 30 10.2109 30 10.4688V12.0312C30 12.2891 29.7891 12.5 29.5312 12.5H12.9688C12.7109 12.5 12.5 12.2891 12.5 12.0312V10.4688ZM12.5 15.4688C12.5 15.2109 12.7109 15 12.9688 15H29.5312C29.7891 15 30 15.2109 30 15.4688V17.0312C30 17.2891 29.7891 17.5 29.5312 17.5H12.9688C12.7109 17.5 12.5 17.2891 12.5 17.0312V15.4688ZM32.2969 35H10C8.61719 35 7.5 33.8828 7.5 32.5C7.5 31.125 8.625 30 10 30H32.2969C32.1484 31.3359 32.1484 33.6641 32.2969 35Z" fill="#015300"/>
+                      </svg>
+          </icon-card>
+
+          <icon-card title="School Community" 
+                     description="A vibrant, inclusive environment where every student feels supported, connected, and inspired to grow."
+                     >
+                      <svg slot="icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M27.1688 8H21.8C21.3 8 20.8188 8.1875 20.45 8.525L14.3062 14.15C14.3 14.1562 14.2938 14.1688 14.2875 14.175C13.25 15.15 13.2688 16.7063 14.1562 17.675C14.95 18.5437 16.6187 18.775 17.6625 17.8438C17.6688 17.8375 17.6812 17.8375 17.6875 17.8313L22.6812 13.2563C23.0875 12.8875 23.725 12.9125 24.0938 13.3188C24.4688 13.725 24.4375 14.3562 24.0312 14.7312L22.4 16.225L31.5 23.6125C31.6812 23.7625 31.8438 23.925 31.9937 24.0938V12L28.5812 8.5875C28.2125 8.2125 27.7 8 27.1688 8ZM34 12.0125V26.0063C34 27.1125 34.8937 28.0063 36 28.0063H40V12.0125H34ZM37 26.0063C36.45 26.0063 36 25.5562 36 25.0063C36 24.4563 36.45 24.0063 37 24.0063C37.55 24.0063 38 24.4563 38 25.0063C38 25.5562 37.55 26.0063 37 26.0063ZM0 28H4C5.10625 28 6 27.1063 6 26V12.0125H0V28ZM3 24.0063C3.55 24.0063 4 24.4563 4 25.0063C4 25.5562 3.55 26.0063 3 26.0063C2.45 26.0063 2 25.5562 2 25.0063C2 24.45 2.45 24.0063 3 24.0063ZM30.2437 25.1688L20.9125 17.5938L19.0375 19.3125C17.1812 21.0063 14.3375 20.8438 12.6812 19.0375C11 17.2 11.1313 14.3562 12.9563 12.6812L18.0688 8H12.8313C12.3 8 11.7937 8.2125 11.4187 8.5875L8 12V25.9937H9.14375L14.8 31.1125C16.5125 32.5062 19.0312 32.2437 20.425 30.5312L20.4375 30.5187L21.5562 31.4875C22.55 32.3 24.0188 32.1437 24.825 31.15L26.7875 28.7375L27.125 29.0125C27.9813 29.7063 29.2437 29.5812 29.9375 28.7188L30.5312 27.9875C31.2313 27.125 31.1 25.8688 30.2437 25.1688Z" fill="#015300"/>
+                      </svg>
+          </icon-card>
+        </div>
+      </div>
 
 
-          <!-- Script -->
-          <script src="js/rough.js"></script>
+      <div class="what-parents-say animate-on-scroll">
+        <h2> What parents says </h2>
+        <p> Hear from families who trust West Africa People's Institute with their children’s future. </p>
+        <div class="testimonies">
+          <testimony-card id="tc" src="/data/testimonies.json"></testimony-card>
+
+        </div> 
+      </div>
+          
+      <div class="news-events animate-on-scroll">
+          <h2> News & Events </h2>
+          <p> Stay updated with the latest happenings at West Africa People's Institute, Calabar. </p>
+          
+          <div class="event-list">
+              <event-card> </event-card>
+          </div>
+      </div>
+    </section>
+
+    <section class="footer-section">
+
+      <admission-banner class="admission-banner animate-on-scroll"></admission-banner>
+
+      <footer-block class="footer-block animate-on-scroll"></footer-block>
+
+      <div class="footnote"> 
+        
+        <p>WAPI</p>
+        <div class="footnote-fade"></div>
+        
+      </div>
+
+    </section>
+    
   </body>
 </html>
