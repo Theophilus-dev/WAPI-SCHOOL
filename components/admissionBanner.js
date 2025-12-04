@@ -45,7 +45,7 @@ class AdmissionBanner extends HTMLElement {
                 <h2>Admission Open</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 
-                <custom-button class="apply-button" label="Apply Now" variant="inverse-primary" href="/pages/admission.html" target="_blank"></custom-button>
+                <custom-button class="apply-button" label="Apply Now" variant="inverse-primary" href="pages/admission.html" target="_blank"></custom-button>
             </div>
         `;
     }

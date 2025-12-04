@@ -116,7 +116,7 @@ class FooterBlock extends HTMLElement {
                     <div class="footer-info">
                         <div class="info-text">
                             <div class="head" id="head1">
-                                <img src="/image/public/wapi-logo.png" alt="">
+                                <img src="image/public/wapi-logo.png" alt="">
                                 <h4> West Africa People’s Institute </h4>
                             </div> 
 
@@ -150,11 +150,11 @@ class FooterBlock extends HTMLElement {
                         </div> 
 
                         <div class="options">
-                            <a href="/index.html"> Home </a>
-                            <a href="/pages/about.html"> About us </a>
-                            <a href="/pages/contact.html"> Contact </a>
-                            <a href="/pages/admission.html"> Admissions </a>
-                            <a href="/pages/gallery.html"> Gallery </a>
+                            <a href="index.html"> Home </a>
+                            <a href="pages/about.html"> About us </a>
+                            <a href="pages/contact.html"> Contact </a>
+                            <a href="pages/admission.html"> Admissions </a>
+                            <a href="pages/gallery.html"> Gallery </a>
 
                         </div>
                     </div>
