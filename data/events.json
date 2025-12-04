@@ -5,7 +5,7 @@
     "month": "Nov",
     "title": "WAPI Inter-House Sports 2025",
     "description": "Students showcased their talents in various sporting activities promoting teamwork, discipline, and school spirit.",
-    "image": "./image/gallery/inter-house-sport/event1.jpg",
+    "image": "../image/gallery/inter-house-sport/event1.jpg",
     "link": "page.html?id=design-workshop",
     "content": " To make a div element sticky on scroll using CSS, the position: sticky; property is utilized. This property allows an element to behave like a position: relative; element until it reaches a defined scroll position within its parent container, at which point it becomes fixed to the viewport like a position: fixed; element. "
   },
@@ -15,7 +15,7 @@
     "month": "Feb",
     "title": "WAPI Science & Innovation Fair",
     "description": "Young scientists presented innovative projects, encouraging creativity and curiosity in STEM fields.",
-    "image": "./image/gallery/lab-science-practical/img-7682.jpg",
+    "image": "../image/gallery/lab-science-practical/img-7682.jpg",
     "link": "page.html?id=crypto-wallet",
     "content": " To make a div element sticky on scroll using CSS, the position: sticky; property is utilized. This property allows an element to behave like a position: relative; element until it reaches a defined scroll position within its parent container, at which point it becomes fixed to the viewport like a position: fixed; element. "
   },
@@ -25,7 +25,7 @@
     "month": "Feb",
     "title": "Cultural Day Celebration",
     "description": "Celebrating Nigeria’s diverse culture with our traditional wear, and food exhibitions from across the country.",
-    "image": "./image/gallery/cultural-day/img-7653.jpg",
+    "image": "../image/gallery/cultural-day/img-7653.jpg",
     "link": "page.html?id=crypto-wallet",
     "content": " To make a div element sticky on scroll using CSS, the position: sticky; property is utilized. This property allows an element to behave like a position: relative; element until it reaches a defined scroll position within its parent container, at which point it becomes fixed to the viewport like a position: fixed; element. "
   },
@@ -35,7 +35,7 @@
     "month": "Feb",
     "title": "Crypto Wallet Talk",
     "description": "Understanding multichain UX patterns.",
-    "image": "./image/event2.jpg",
+    "image": "../image/event2.jpg",
     "link": "page.html?id=crypto-wallet",
     "content": " To make a div element sticky on scroll using CSS, the position: sticky; property is utilized. This property allows an element to behave like a position: relative; element until it reaches a defined scroll position within its parent container, at which point it becomes fixed to the viewport like a position: fixed; element. "
   },
@@ -45,7 +45,7 @@
     "month": "Feb",
     "title": "Crypto Wallet Talk",
     "description": "Understanding multichain UX patterns.",
-    "image": "./image/event2.jpg",
+    "image": "../image/event2.jpg",
     "link": "page.html?id=crypto-wallet",
     "content": " To make a div element sticky on scroll using CSS, the position: sticky; property is utilized. This property allows an element to behave like a position: relative; element until it reaches a defined scroll position within its parent container, at which point it becomes fixed to the viewport like a position: fixed; element. "
   },
@@ -55,7 +55,7 @@
     "month": "Feb",
     "title": "Crypto Wallet Talk",
     "description": "Understanding multichain UX patterns.",
-    "image": "./image/event2.jpg",
+    "image": "../image/event2.jpg",
     "link": "page.html?id=crypto-wallet",
     "content": " To make a div element sticky on scroll using CSS, the position: sticky; property is utilized. This property allows an element to behave like a position: relative; element until it reaches a defined scroll position within its parent container, at which point it becomes fixed to the viewport like a position: fixed; element. "
   }
