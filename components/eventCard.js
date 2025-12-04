@@ -214,7 +214,7 @@ class EventCard extends HTMLElement {
 
 
       card.innerHTML = `
-        <div class="image" style="background-image:url(${event.image})">
+        <div class="image" style="background-image:url('${event.image}')">
           <div class="date-box">
             <div class="day">${event.day}</div>
             <div class="month">${event.month}</div>
