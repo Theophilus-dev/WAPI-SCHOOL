@@ -162,7 +162,7 @@ class EventCard extends HTMLElement {
 
   async fetchData() {
     try {
-      const res = await fetch("/data/events.json");
+      const res = await fetch("data/events.json");
       this.events = await res.json();
 
       this.renderCards(); // Load first batch
