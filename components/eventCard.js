@@ -222,7 +222,7 @@ class EventCard extends HTMLElement {
         </div>
 
         <a class="details" target="_blank"
-           href="pages/events-tmp-page.html?id=${event.id}">
+           href="events-tmp-page.html?id=${event.id}">
           <div class="title">${event.title}</div>
           <div class="desc">${event.description}</div>
           <div class="readmore">

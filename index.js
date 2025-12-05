@@ -107,19 +107,24 @@ document.addEventListener("DOMContentLoaded", loadEvent);
 
 
 
-// Hero typwriting effect
+// Hero typewriting effect
+const heroHeading = document.getElementById("hero-heading");
+
+if (heroHeading) {
   const text = "Welcome to West Africa People's Institute";
   let i = 0;
 
   function type() {
     if (i < text.length) {
-      document.getElementById("hero-heading").innerHTML += text.charAt(i);
+      heroHeading.innerHTML += text.charAt(i);
       i++;
       setTimeout(type, 100); // typing speed
     }
   }
 
   type();
+}
+
 
 
 
@@ -154,3 +159,42 @@ document.addEventListener("DOMContentLoaded", loadEvent);
   }, { threshold: 0.3 });
 
   sections.forEach(sec => observer.observe(sec));
+
+
+
+
+/* Breadcrumb */
+function createBreadcrumb() {
+  // Select ID first, fallback to class
+  const breadcrumb =
+    document.getElementById("breadcrumb") ||
+    document.querySelector(".breadcrumb");
+
+  // If neither exists → stop
+  if (!breadcrumb) return;
+
+  const path = window.location.pathname;
+  const segments = path.split("/").filter(Boolean);
+
+  let builtPath = "/";
+  let html = `<a href="/">Home</a>`;
+
+  segments.forEach((segment, index) => {
+    builtPath += segment + "/";
+
+    const label = segment
+      .replace(/-/g, " ")
+      .replace(/\.\w+$/, "")
+      .replace(/\b\w/g, l => l.toUpperCase());
+
+    if (index === segments.length - 1) {
+      html += ` <span>/</span> <span class="active">${label}</span>`;
+    } else {
+      html += ` <span>/</span> <a href="${builtPath}">${label}</a>`;
+    }
+  });
+
+  breadcrumb.innerHTML = html;
+}
+
+document.addEventListener("DOMContentLoaded", createBreadcrumb);

@@ -151,10 +151,10 @@ class FooterBlock extends HTMLElement {
 
                         <div class="options">
                             <a href="index.html"> Home </a>
-                            <a href="pages/about.html"> About us </a>
-                            <a href="pages/contact.html"> Contact </a>
-                            <a href="pages/admission.html"> Admissions </a>
-                            <a href="pages/gallery.html"> Gallery </a>
+                            <a href="about.html"> About us </a>
+                            <a href="contact.html"> Contact </a>
+                            <a href="admission.html"> Admissions </a>
+                            <a href="gallery.html"> Gallery </a>
 
                         </div>
                     </div>
