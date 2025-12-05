@@ -106,13 +106,13 @@ class ResponsiveNav extends HTMLElement {
 
         <div class="menu-items">
           <menu-button label="Home" variant="menu-btn" href="index.html"></menu-button>
-          <menu-button label="About" variant="menu-btn" href="pages/about.html"></menu-button>
-          <menu-button label="Contact" variant="menu-btn" href="pages/contact.html"></menu-button>
-          <menu-button label="Gallery" variant="menu-btn" href="pages/gallery.html"></menu-button>
-          <menu-button class="portalSm" label="Portal" variant="portal" href="pages/signin.html"></menu-button>
+          <menu-button label="About" variant="menu-btn" href="about.html"></menu-button>
+          <menu-button label="Contact" variant="menu-btn" href="contact.html"></menu-button>
+          <menu-button label="Gallery" variant="menu-btn" href="gallery.html"></menu-button>
+          <menu-button class="portalSm" label="Portal" variant="portal" href="signin.html"></menu-button>
         </div>
         
-        <menu-button class="portalLg" label="Portal" variant="portal" href="pages/signin.html"></menu-button>
+        <menu-button class="portalLg" label="Portal" variant="portal" href="signin.html"></menu-button>
       </nav>
     `;
 
