@@ -43,7 +43,7 @@ class AdmissionBanner extends HTMLElement {
 
             <div class="banner">
                 <h2>Admission Open</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Enroll at WAPI School today and join a vibrant learning community where excellence, creativity, and personal growth are nurtured from day one.</p>
                 
                 <custom-button class="apply-button" label="Apply Now" variant="inverse-primary" href="pages/admission.html" target="_blank"></custom-button>
             </div>

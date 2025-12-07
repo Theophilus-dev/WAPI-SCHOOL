@@ -51,6 +51,7 @@ class ResponsiveNav extends HTMLElement {
           cursor: pointer;
         }
 
+
         /* MOBILE */
         @media (max-width: 768px) {
           nav {
@@ -84,13 +85,13 @@ class ResponsiveNav extends HTMLElement {
           }
         
          .portalSm {
-          width: 100%;
-          display: flex;
-          justify-content: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
           }
 
           .portalLg {
-          display: none;
+             display: none;
           }
 
           .menu-toggle {
@@ -109,10 +110,10 @@ class ResponsiveNav extends HTMLElement {
           <menu-button label="About" variant="menu-btn" href="about.html"></menu-button>
           <menu-button label="Contact" variant="menu-btn" href="contact.html"></menu-button>
           <menu-button label="Gallery" variant="menu-btn" href="gallery.html"></menu-button>
-          <menu-button class="portalSm" label="Portal" variant="portal" href="signin.html"></menu-button>
+          <menu-button class="portalSm portal-btn" label="Portal" variant="portal" href="signin.html"></menu-button>
         </div>
         
-        <menu-button class="portalLg" label="Portal" variant="portal" href="signin.html"></menu-button>
+        <menu-button class="portalLg portal-btn" label="Portal" variant="portal" href="signin.html"></menu-button>
       </nav>
     `;
 
@@ -134,6 +135,18 @@ class ResponsiveNav extends HTMLElement {
         nav.classList.remove("scrolled");
       }
     });
+
+    
+    // Diable portal menu-button on portal login page
+    const portalBtns = shadow.querySelectorAll('.portal-btn');
+
+    if (window.location.pathname.endsWith('signin.html')) {
+      portalBtns.forEach(btn => {
+        btn.style.opacity = '0.2';
+        btn.style.pointerEvents = 'none';
+        btn.style.cursor = 'not-allowed';
+      });
+    }
 
   }
 }

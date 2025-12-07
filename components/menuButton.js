@@ -13,7 +13,7 @@ export class MenuButton extends HTMLElement {
           all: unset;
           cursor: pointer;
           padding: 8px 20px;
-          font-size: 1rem;
+          font-size: .9rem;
           text-align: center;
           align-items: center;
           justify-content: center;

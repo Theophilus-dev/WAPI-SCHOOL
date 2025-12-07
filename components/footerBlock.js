@@ -61,6 +61,14 @@ class FooterBlock extends HTMLElement {
                     gap: 8px;
                     color: var(--text-black-body);
                 }
+                icon-button {
+                    border-radius: 50%;
+                    border: var(--border1);
+                    transition: var(--transition-slow);
+                }
+                icon-button:hover {
+                    border-color: var(--hover);
+                }
 
                 /* Menu Section */
                 .options a {
