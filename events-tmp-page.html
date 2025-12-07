@@ -21,51 +21,103 @@
             </header>
                 
                 
-                <div class="events-main-container">
-                    
+            <div class="events-main-container">
+                
+                <div class="post-year">
                     <p id="date"></p>
-                    <h1 id="title"></h1>
+                    <p id="year"></p>
+                </div>
 
-                    <div class="social-icons">
-                        <icon-button>
-                            <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.1516 8.61107C4.3368 8.61107 4.16675 8.77099 4.16675 9.53699V10.9259C4.16675 11.692 4.3368 11.8518 5.1516 11.8518H7.12129V17.4074C7.12129 18.1734 7.29134 18.3333 8.10614 18.3333H10.0758C10.8907 18.3333 11.0607 18.1734 11.0607 17.4074V11.8518H13.2723C13.8903 11.8518 14.0496 11.7389 14.2193 11.1803L14.6414 9.79141C14.9322 8.83449 14.753 8.61107 13.6944 8.61107H11.0607V6.29629C11.0607 5.78491 11.5016 5.37036 12.0455 5.37036H14.8486C15.6633 5.37036 15.8334 5.21048 15.8334 4.44443V2.59258C15.8334 1.82653 15.6633 1.66666 14.8486 1.66666H12.0455C9.32592 1.66666 7.12129 3.73941 7.12129 6.29629V8.61107H5.1516Z" stroke="#676767" stroke-width="1.5" stroke-linejoin="round"/>
-                            </svg>
-                        </icon-button>
+                <h1 id="title"></h1>
 
-                        <icon-button>
-                            <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.08325 10C2.08325 6.26806 2.08325 4.40209 3.24262 3.24271C4.40199 2.08334 6.26797 2.08334 9.99992 2.08334C13.7318 2.08334 15.5978 2.08334 16.7573 3.24271C17.9166 4.40209 17.9166 6.26806 17.9166 10C17.9166 13.7319 17.9166 15.5979 16.7573 16.7573C15.5978 17.9167 13.7318 17.9167 9.99992 17.9167C6.26797 17.9167 4.40199 17.9167 3.24262 16.7573C2.08325 15.5979 2.08325 13.7319 2.08325 10Z" stroke="#676767" stroke-width="1.5" stroke-linejoin="round"/>
-                                <path d="M13.75 10C13.75 12.0711 12.0711 13.75 10 13.75C7.92893 13.75 6.25 12.0711 6.25 10C6.25 7.92893 7.92893 6.25 10 6.25C12.0711 6.25 13.75 7.92893 13.75 10Z" stroke="#676767" stroke-width="1.5"/>
-                                <path d="M14.5898 5.41666H14.5823" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </icon-button>
-
-                        <icon-button>
-                            <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.82981 3.75H6.96175C4.50652 3.75 3.2789 3.75 2.51616 4.48223C1.75342 5.21447 1.75342 6.39297 1.75342 8.75V12.0833C1.75342 14.4403 1.75342 15.6188 2.51616 16.3511C3.2789 17.0833 4.50652 17.0833 6.96175 17.0833H10.4673C12.9225 17.0833 14.1501 17.0833 14.9129 16.3511C15.407 15.8767 15.581 15.2149 15.6423 14.1667" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M13.4723 5.83332V3.21128C13.4723 3.04856 13.6097 2.91666 13.7792 2.91666C13.8605 2.91666 13.9386 2.9477 13.9962 3.00295L17.9396 6.7887C18.1362 6.97734 18.2465 7.23321 18.2465 7.49999C18.2465 7.76677 18.1362 8.02264 17.9396 8.21128L13.9962 11.997C13.9386 12.0523 13.8605 12.0833 13.7792 12.0833C13.6097 12.0833 13.4723 11.9514 13.4723 11.7887V9.16666H10.9298C7.39583 9.16666 6.09375 12.0833 6.09375 12.0833V9.99999C6.09375 7.69881 8.03696 5.83332 10.434 5.83332H13.4723Z" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </icon-button>
-                    </div>
-
-                    <icon-button id="back-to-top">
+                <div class="social-icons">
+                    <icon-button class="social-icon" id="facebookShare">
                         <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 4.58331V15.8333Z" fill="currentColor"/>
-                            <path d="M10 4.58331V15.8333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15 9.16669C15 9.16669 11.3176 4.1667 10 4.16669C8.68233 4.16668 5 9.16669 5 9.16669" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.1516 8.61107C4.3368 8.61107 4.16675 8.77099 4.16675 9.53699V10.9259C4.16675 11.692 4.3368 11.8518 5.1516 11.8518H7.12129V17.4074C7.12129 18.1734 7.29134 18.3333 8.10614 18.3333H10.0758C10.8907 18.3333 11.0607 18.1734 11.0607 17.4074V11.8518H13.2723C13.8903 11.8518 14.0496 11.7389 14.2193 11.1803L14.6414 9.79141C14.9322 8.83449 14.753 8.61107 13.6944 8.61107H11.0607V6.29629C11.0607 5.78491 11.5016 5.37036 12.0455 5.37036H14.8486C15.6633 5.37036 15.8334 5.21048 15.8334 4.44443V2.59258C15.8334 1.82653 15.6633 1.66666 14.8486 1.66666H12.0455C9.32592 1.66666 7.12129 3.73941 7.12129 6.29629V8.61107H5.1516Z" stroke="#676767" stroke-width="1.5" stroke-linejoin="round"/>
                         </svg>
                     </icon-button>
-                    <!-- Post Content exactly before image -->
-                    <div class="event-post-content">
 
-                        <img id="image" alt="Event Image" class="event-image">
+                    <icon-button class="social-icon" id="copyLink">
+                        <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 12.5C7.5 10.143 7.5 8.9645 8.23223 8.23223C8.9645 7.5 10.143 7.5 12.5 7.5H13.3333C15.6903 7.5 16.8688 7.5 17.6011 8.23223C18.3333 8.9645 18.3333 10.143 18.3333 12.5V13.3333C18.3333 15.6903 18.3333 16.8688 17.6011 17.6011C16.8688 18.3333 15.6903 18.3333 13.3333 18.3333H12.5C10.143 18.3333 8.9645 18.3333 8.23223 17.6011C7.5 16.8688 7.5 15.6903 7.5 13.3333V12.5Z" fill="#676767" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.1667 7.49999C14.1647 5.03575 14.1274 3.75933 13.4101 2.88535C13.2716 2.71656 13.1168 2.56181 12.9481 2.42329C12.0261 1.66666 10.6563 1.66666 7.91675 1.66666C5.17718 1.66666 3.8074 1.66666 2.88544 2.42329C2.71666 2.5618 2.5619 2.71656 2.42338 2.88535C1.66675 3.80731 1.66675 5.17709 1.66675 7.91666C1.66675 10.6562 1.66675 12.026 2.42338 12.948C2.56189 13.1167 2.71666 13.2715 2.88544 13.41C3.75942 14.1273 5.03584 14.1646 7.50008 14.1666" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </icon-button>
 
-                        <div id="event-content"></div>
+                    <icon-button class="social-icon" id="normalShare">
+                        <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.82981 3.75H6.96175C4.50652 3.75 3.2789 3.75 2.51616 4.48223C1.75342 5.21447 1.75342 6.39297 1.75342 8.75V12.0833C1.75342 14.4403 1.75342 15.6188 2.51616 16.3511C3.2789 17.0833 4.50652 17.0833 6.96175 17.0833H10.4673C12.9225 17.0833 14.1501 17.0833 14.9129 16.3511C15.407 15.8767 15.581 15.2149 15.6423 14.1667" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.4723 5.83332V3.21128C13.4723 3.04856 13.6097 2.91666 13.7792 2.91666C13.8605 2.91666 13.9386 2.9477 13.9962 3.00295L17.9396 6.7887C18.1362 6.97734 18.2465 7.23321 18.2465 7.49999C18.2465 7.76677 18.1362 8.02264 17.9396 8.21128L13.9962 11.997C13.9386 12.0523 13.8605 12.0833 13.7792 12.0833C13.6097 12.0833 13.4723 11.9514 13.4723 11.7887V9.16666H10.9298C7.39583 9.16666 6.09375 12.0833 6.09375 12.0833V9.99999C6.09375 7.69881 8.03696 5.83332 10.434 5.83332H13.4723Z" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </icon-button>
+                </div>
+
+                <icon-button id="back-to-top">
+                    <svg slot="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 4.58331V15.8333Z" fill="currentColor"/>
+                        <path d="M10 4.58331V15.8333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 9.16669C15 9.16669 11.3176 4.1667 10 4.16669C8.68233 4.16668 5 9.16669 5 9.16669" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </icon-button>
+                <!-- Post Content exactly before image -->
+                <div class="event-post-content">
+
+                    <img id="image" alt="Event Image" class="event-image">
+
+                    <div id="event-content"></div>
+                </div>
+
+
+                <div class="post-nav">
+                    <h4>Navigation:</h4>
+
+                    <div class="post-nav-btns">
+
+                        <!-- PREV BUTTON -->
+                        <div class="post-nav-btn" id="prevBtn">
+                            <div class="post-nav-btn-iconbg">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4.58325 10.0017H15.8333H4.58325Z" fill="#333333"/>
+                                    <path d="M4.58325 10.0017H15.8333" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M9.16669 15.0016C9.16669 15.0016 4.16676 11.3191 4.16675 10.0015C4.16674 8.68396 9.16677 5.00159 9.16677 5.00159" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <p class="previous-nav-text">Previous</p>
+                        </div>
+
+                        <span class="post-nav-btn-spacer"></span>
+
+                        <!-- NEXT BUTTON -->
+                        <div class="post-nav-btn" id="nextBtn">
+                            <p class="next-nav-text">Next</p>
+                            <div class="post-nav-btn-iconbg">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.4168 10H4.16675H15.4168Z" fill="#333333"/>
+                                    <path d="M15.4168 10H4.16675" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.8333 15C10.8333 15 15.8333 11.3176 15.8333 10C15.8333 8.68233 10.8333 5 10.8333 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
+            </div>
+
         </section>
+
+        <section class="footer-section">
+
+            <footer-block class="footer-block animate-on-scroll"></footer-block>
+
+            <div class="footnote"> 
+            
+            <p>WAPI</p>
+            <div class="footnote-fade"></div>
+            
+            </div>
+
+      </section>
 
 
     </body>
